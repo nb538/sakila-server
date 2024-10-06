@@ -69,7 +69,7 @@ order by film.title;`
 app.get("/api/toprent", (req,res) => {
     connection.query(top5rented, (error, results) => {
         if (error) {
-            console.error('Error fetching actors from the database: ' + error.stack);
+            console.error('Error fetching 1 from the database: ' + error.stack);
         }
         res.json(results);
     });
@@ -78,7 +78,7 @@ app.get("/api/toprent", (req,res) => {
 app.get("/api/topactorall", (req,res) => {
     connection.query(topActorsAll, (error, results) => {
         if (error) {
-            console.error('Error fetching actors from the database: ' + error.stack);
+            console.error('Error fetching 2 from the database: ' + error.stack);
         }
         res.json(results);
     });
@@ -87,7 +87,7 @@ app.get("/api/topactorall", (req,res) => {
 app.get("/api/topperstore", (req,res) => {
     connection.query(actorsPerStore, (error, results) => {
         if (error) {
-            console.error('Error fetching actors from the database: ' + error.stack);
+            console.error('Error fetching 3 from the database: ' + error.stack);
         }
         res.json(results);
     });
@@ -96,7 +96,7 @@ app.get("/api/topperstore", (req,res) => {
 app.get("/api/toprentperactor", (req,res) => {
     connection.query(topRentPerActor, (error, results) => {
         if (error) {
-            console.error('Error fetching actors from the database: ' + error.stack);
+            console.error('Error fetching 4 from the database: ' + error.stack);
         }
         res.json(results);
     });
@@ -105,7 +105,7 @@ app.get("/api/toprentperactor", (req,res) => {
 app.get("/api/customers", (req,res) => {
     connection.query(listCustomers, (error, results) => {
         if (error) {
-            console.error('Error fetching actors from the database: ' + error.stack);
+            console.error('Error fetching 5 from the database: ' + error.stack);
         }
         res.json(results);
     });
@@ -114,7 +114,7 @@ app.get("/api/customers", (req,res) => {
 app.get("/api/filmactorgenre", (req,res) => {
     connection.query(filmsTable, (error, results) => {
         if (error) {
-            console.error('Error fetching actors from the database: ' + error.stack);
+            console.error('Error fetching 6 from the database: ' + error.stack);
         }
         res.json(results);
     });
@@ -123,7 +123,7 @@ app.get("/api/filmactorgenre", (req,res) => {
 app.get("/api/film", (req,res) => {
     connection.query(`select * from film`, (error, results) => {
         if (error) {
-            console.error('Error fetching actors from the database: ' + error.stack);
+            console.error('Error fetching  7from the database: ' + error.stack);
         }
         res.json(results);
     });
@@ -132,7 +132,7 @@ app.get("/api/film", (req,res) => {
 app.get("/api/currentinventory", (req,res) => {
     connection.query(currentInventory, (error, results) => {
         if (error) {
-            console.error('Error fetching actors from the database: ' + error.stack);
+            console.error('Error fetching 8 from the database: ' + error.stack);
         }
         res.json(results);
     });
@@ -141,7 +141,7 @@ app.get("/api/currentinventory", (req,res) => {
 app.get("/api/currentrent", (req,res) => {
     connection.query(currentRented, (error, results) => {
         if (error) {
-            console.error('Error fetching actors from the database: ' + error.stack);
+            console.error('Error fetching 9 from the database: ' + error.stack);
         }
         res.json(results);
     });
